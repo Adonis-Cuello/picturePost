@@ -12,8 +12,8 @@ public class UserConfig {
     @Bean
     CommandLineRunner commandLineRunner (UserRepo userRepo){
         return args -> {
-            User user = new User("myemail@gmail.com");
-            userRepo.save(user);
+            User testUser1 = new User("BillieBob", "billieWillie@gmail.com", "Bill", "Jones");
+            userRepo.save(testUser1);
         };
     }
 }
